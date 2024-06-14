@@ -2,6 +2,8 @@
 
 main()
 {
+/*This is a float use for more precision at the time to convert the
+temperature to decimals.*/
     float fahr, celsius;
     int lower, upper, step;
 
@@ -10,9 +12,10 @@ main()
     step = 20;
 
     fahr = lower;
+        printf(" Fahr \t Celsius\n");
     while (fahr <= upper) {
         celsius = (5.0/9.0) * (fahr-32.0);
-        printf("%3.1f %6.1f\n", fahr, celsius);
+        printf("%3.0f %6.1f\n", fahr, celsius);
         fahr = fahr + step;
     }
 }
